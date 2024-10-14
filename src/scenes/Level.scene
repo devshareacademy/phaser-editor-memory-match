@@ -1,0 +1,52 @@
+{
+    "id": "01aefa93-6044-4159-8358-7e91310aa05f",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "importFileExtension": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Level",
+        "borderWidth": 1280,
+        "borderHeight": 720
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "2caacd38-e09d-421c-95a6-2ab05028070a",
+            "label": "fF5IT3",
+            "displayName": "Background",
+            "texture": {
+                "key": "fF5IT3"
+            },
+            "x": -7,
+            "y": -28,
+            "scaleX": 0.72,
+            "scaleY": 0.72,
+            "originX": 0,
+            "originY": 0
+        },
+        {
+            "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
+            "id": "9a733e3b-c6c1-4ce0-8941-04b1e2f1d468",
+            "unlock": [
+                "x",
+                "y",
+                "cardFrontAssetKey",
+                "cardFrontTextureConfig"
+            ],
+            "label": "card",
+            "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Bat.png\"}",
+            "x": 213,
+            "y": 135
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

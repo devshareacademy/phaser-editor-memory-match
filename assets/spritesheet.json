@@ -1,0 +1,155 @@
+{
+	"frames": {
+		"Bat.png": {
+			"frame": {
+				"x": 1,
+				"y": 1,
+				"w": 144,
+				"h": 144
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 144
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 144
+			}
+		},
+		"Cadle.png": {
+			"frame": {
+				"x": 147,
+				"y": 1,
+				"w": 144,
+				"h": 144
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 144
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 144
+			}
+		},
+		"Candy.png": {
+			"frame": {
+				"x": 1,
+				"y": 147,
+				"w": 144,
+				"h": 144
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 144
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 144
+			}
+		},
+		"Cat.png": {
+			"frame": {
+				"x": 147,
+				"y": 147,
+				"w": 144,
+				"h": 144
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 144
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 144
+			}
+		},
+		"Pumpkin.png": {
+			"frame": {
+				"x": 293,
+				"y": 1,
+				"w": 144,
+				"h": 144
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 144
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 144
+			}
+		},
+		"Skull.png": {
+			"frame": {
+				"x": 293,
+				"y": 147,
+				"w": 144,
+				"h": 144
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 144
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 144
+			}
+		},
+		"Verse.png": {
+			"frame": {
+				"x": 1,
+				"y": 293,
+				"w": 144,
+				"h": 144
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 144,
+				"h": 144
+			},
+			"sourceSize": {
+				"w": 144,
+				"h": 144
+			}
+		}
+	},
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "spritesheet.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 438,
+			"h": 438
+		},
+		"scale": "1"
+	}
+}

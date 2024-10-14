@@ -1,0 +1,57 @@
+{
+    "id": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "importFileExtension": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1280,
+        "borderHeight": 720
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "0b4552d7-707b-404f-82a1-2912199d75f1",
+            "label": "image_1",
+            "hitArea.shape": "RECTANGLE",
+            "hitArea.width": 144,
+            "hitArea.height": 144,
+            "texture": {
+                "key": "spritesheet",
+                "frame": "Verse.png"
+            }
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    },
+    "prefabProperties": [
+        {
+            "name": "cardFrontTextureConfig",
+            "label": "Card Front Texture Config",
+            "tooltip": "The asset key to use for the front of the card.",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "texture-config"
+            }
+        },
+        {
+            "name": "cardBackTextureConfig",
+            "label": "Card Back Texture Config",
+            "tooltip": "The texture config to use for the back of the card.",
+            "defValue": "{\"key\":\"spritesheet\",\"frame\":\"Verse.png\"}",
+            "customDefinition": false,
+            "type": {
+                "id": "texture-config"
+            }
+        }
+    ]
+}

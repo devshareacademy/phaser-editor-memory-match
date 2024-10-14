@@ -1,0 +1,29 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/dino.png",
+                "key": "dino",
+                "type": "image"
+            },
+            {
+                "url": "assets/fF5IT3.png",
+                "type": "image",
+                "key": "fF5IT3"
+            },
+            {
+                "atlasURL": "assets/spritesheet.json",
+                "textureURL": "assets/spritesheet.png",
+                "type": "atlas",
+                "key": "spritesheet"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}
