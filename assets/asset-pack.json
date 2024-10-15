@@ -2,6 +2,13 @@
     "section1": {
         "files": [
             {
+                "url": [
+                    "assets/3-Midnight-Candy-Chase-loop.mp3"
+                ],
+                "type": "audio",
+                "key": "3-Midnight-Candy-Chase-loop"
+            },
+            {
                 "url": "assets/text/clickToPlay.png",
                 "type": "image",
                 "key": "clickToPlay"
@@ -20,6 +27,19 @@
                 "url": "assets/fF5IT3.png",
                 "type": "image",
                 "key": "fF5IT3"
+            },
+            {
+                "url": "assets/fullscreen.png",
+                "frameConfig": {
+                    "frameWidth": 64,
+                    "frameHeight": 64,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "fullscreen"
             },
             {
                 "url": "assets/text/nice.png",

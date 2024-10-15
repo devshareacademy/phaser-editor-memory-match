@@ -5,6 +5,8 @@
 
 import Background from "../prefabs/Background.js";
 import AnimationConfigBase from "../scriptnodes/animations/AnimationConfigBase.js";
+import FullScreenButton from "../prefabs/FullScreenButton.js";
+import AudioPrefab from "../scriptnodes/misc/AudioPrefab.js";
 import SceneClickHandler from "../scriptnodes/misc/SceneClickHandler.js";
 import StopGameObjectTweens from "../scriptnodes/animations/StopGameObjectTweens.js";
 import StartScene from "../scriptnodes/misc/StartScene.js";
@@ -50,6 +52,13 @@ export default class Title extends Phaser.Scene {
 		// fadeIn
 		const fadeIn = new AnimationConfigBase(clickToPlay);
 
+		// fullScreenButton
+		const fullScreenButton = new FullScreenButton(this, 1238, 42);
+		this.add.existing(fullScreenButton);
+
+		// audioPrefab
+		const audioPrefab = new AudioPrefab(this);
+
 		// sceneClickHandler
 		const sceneClickHandler = new SceneClickHandler(this);
 
@@ -89,6 +98,10 @@ export default class Title extends Phaser.Scene {
 		fadeIn.autoExecute = true;
 		fadeIn.yoyo = true;
 		fadeIn.delay = 1500;
+
+		// audioPrefab (prefab fields)
+		audioPrefab.key = "3-Midnight-Candy-Chase-loop";
+		audioPrefab.loop = true;
 
 		// sceneClickHandler (prefab fields)
 		sceneClickHandler.autoExecute = true;

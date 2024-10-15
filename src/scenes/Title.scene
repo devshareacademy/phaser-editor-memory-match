@@ -107,6 +107,28 @@
             ]
         },
         {
+            "prefabId": "2dc0af1b-bed4-4583-88df-8fd91f7139a1",
+            "id": "c5706707-765d-40e7-8423-834bc97af4b3",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "fullScreenButton",
+            "x": 1238,
+            "y": 42
+        },
+        {
+            "prefabId": "87adfd66-2fb0-478e-b6f8-bf77e81b8fd9",
+            "id": "d005f3b4-e30c-4e85-a3fa-1844bc195382",
+            "unlock": [
+                "key",
+                "loop"
+            ],
+            "label": "audioPrefab",
+            "key": "3-Midnight-Candy-Chase-loop",
+            "loop": true
+        },
+        {
             "prefabId": "3d0f9437-ede2-4a64-86fb-d4956574496b",
             "id": "96de52ab-c391-49bb-a82e-2ae128245178",
             "unlock": [

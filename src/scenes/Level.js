@@ -9,6 +9,7 @@ import AnimationConfigBase from "../scriptnodes/animations/AnimationConfigBase.j
 import SceneClickHandler from "../scriptnodes/misc/SceneClickHandler.js";
 import SceneRestart from "../scriptnodes/misc/SceneRestart.js";
 import GamePlay from "../scriptnodes/GamePlay.js";
+import FullScreenButton from "../prefabs/FullScreenButton.js";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -111,6 +112,10 @@ export default class Level extends Phaser.Scene {
 
 		// gamePlay
 		const gamePlay = new GamePlay(this);
+
+		// fullScreenButton
+		const fullScreenButton = new FullScreenButton(this, 1238, 42);
+		this.add.existing(fullScreenButton);
 
 		// lists
 		const cards = [card_7, card_6, card_5, card_4, card_3, card_2, card_1, card, card4, card3, card2, card1];

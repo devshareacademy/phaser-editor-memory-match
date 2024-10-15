@@ -321,6 +321,17 @@
             "cards": "cards",
             "cardContainer": "cardContainer",
             "gameOverScriptNodes": "gameOverScriptNodes"
+        },
+        {
+            "prefabId": "2dc0af1b-bed4-4583-88df-8fd91f7139a1",
+            "id": "edfd3525-ac7f-4ceb-b05f-55d858f004ac",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "fullScreenButton",
+            "x": 1238,
+            "y": 42
         }
     ],
     "plainObjects": [],
