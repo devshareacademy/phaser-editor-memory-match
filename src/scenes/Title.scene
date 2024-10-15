@@ -1,0 +1,198 @@
+{
+    "id": "a7e59a0d-5faa-4789-a22e-1641ca07a23d",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "importFileExtension": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Title",
+        "borderWidth": 1280,
+        "borderHeight": 720
+    },
+    "displayList": [
+        {
+            "prefabId": "58b51a3f-17df-4544-8954-deacaba4533c",
+            "id": "e81e9df0-e051-4e88-92e5-772af42c029a",
+            "label": "background"
+        },
+        {
+            "type": "Image",
+            "id": "5e7bda76-6dad-46c2-af76-5464ded3484f",
+            "label": "title",
+            "texture": {
+                "key": "title"
+            },
+            "x": 640,
+            "y": 246,
+            "scaleX": 0,
+            "scaleY": 0,
+            "list": [
+                {
+                    "prefabId": "45946cf1-e167-4a9f-ada0-2fe5b749f28c",
+                    "id": "6bbcbfc0-78d3-4837-b38f-6e468e35d33c",
+                    "unlock": [
+                        "to",
+                        "duration",
+                        "property",
+                        "autoExecute"
+                    ],
+                    "label": "scaleTitle",
+                    "displayName": "Scale in title text",
+                    "to": 1,
+                    "duration": 2000,
+                    "property": "scale",
+                    "autoExecute": true,
+                    "list": [
+                        {
+                            "prefabId": "45946cf1-e167-4a9f-ada0-2fe5b749f28c",
+                            "id": "0ac5df42-f80e-40b6-888d-b1b3fd72a623",
+                            "unlock": [
+                                "from",
+                                "to",
+                                "repeat",
+                                "yoyo",
+                                "property"
+                            ],
+                            "label": "yoyoY",
+                            "displayName": "Animate title text up and down",
+                            "to": 226,
+                            "from": 246,
+                            "repeat": -1,
+                            "property": "y",
+                            "yoyo": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "id": "0881c1d0-23f4-4c63-bd30-7782375082ed",
+            "label": "clickToPlay",
+            "texture": {
+                "key": "clickToPlay"
+            },
+            "x": 640,
+            "y": 521,
+            "alpha": 0,
+            "alphaTopLeft": 0,
+            "alphaTopRight": 0,
+            "alphaBottomLeft": 0,
+            "alphaBottomRight": 0,
+            "list": [
+                {
+                    "prefabId": "45946cf1-e167-4a9f-ada0-2fe5b749f28c",
+                    "id": "c1996b1a-d4d2-46e8-98f1-dc11de622104",
+                    "unlock": [
+                        "to",
+                        "from",
+                        "repeat",
+                        "property",
+                        "autoExecute",
+                        "yoyo",
+                        "delay"
+                    ],
+                    "label": "fadeIn",
+                    "displayName": "Fade in text",
+                    "to": 1,
+                    "from": 0.2,
+                    "repeat": -1,
+                    "property": "alpha",
+                    "autoExecute": true,
+                    "yoyo": true,
+                    "delay": 1500
+                }
+            ]
+        },
+        {
+            "prefabId": "3d0f9437-ede2-4a64-86fb-d4956574496b",
+            "id": "96de52ab-c391-49bb-a82e-2ae128245178",
+            "unlock": [
+                "autoExecute"
+            ],
+            "label": "sceneClickHandler",
+            "autoExecute": true,
+            "list": [
+                {
+                    "prefabId": "c687f09d-b8c1-424c-8ce4-9c275974b51d",
+                    "id": "c2ee0738-c3d2-49b7-9092-6d91ea8c343e",
+                    "unlock": [
+                        "targetGameObject",
+                        "targetGameObjects"
+                    ],
+                    "label": "stopTitleTextTweens",
+                    "displayName": "Stop the title text tweens.",
+                    "targetGameObjects": "textGameObjects",
+                    "list": [
+                        {
+                            "prefabId": "45946cf1-e167-4a9f-ada0-2fe5b749f28c",
+                            "id": "579705ba-468b-47dd-8a49-a87baa4ff43f",
+                            "unlock": [
+                                "to",
+                                "from",
+                                "target",
+                                "property",
+                                "duration"
+                            ],
+                            "label": "moveTitleTextOut",
+                            "displayName": "Move title text at",
+                            "to": -50,
+                            "from": 246,
+                            "duration": 800,
+                            "property": "y",
+                            "target": "title",
+                            "list": [
+                                {
+                                    "prefabId": "f737f7db-81b4-4411-8b05-4b9dcdbc91f1",
+                                    "id": "7b5b15a9-c619-4aea-80ac-c8f32cef094b",
+                                    "unlock": [
+                                        "sceneName"
+                                    ],
+                                    "label": "startScene",
+                                    "sceneName": "Level"
+                                }
+                            ]
+                        },
+                        {
+                            "prefabId": "45946cf1-e167-4a9f-ada0-2fe5b749f28c",
+                            "id": "da92a5ba-04ae-4725-b8a8-39e4c22260a3",
+                            "unlock": [
+                                "to",
+                                "from",
+                                "target",
+                                "property",
+                                "duration"
+                            ],
+                            "label": "moveAltText",
+                            "displayName": "Move alt text out of scene",
+                            "to": 800,
+                            "from": 521,
+                            "duration": 800,
+                            "property": "y",
+                            "target": "clickToPlay"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    },
+    "lists": [
+        {
+            "id": "ba8fe61a-867d-4c69-a5ef-313506722970",
+            "label": "textGameObjects",
+            "objectIds": [
+                "0881c1d0-23f4-4c63-bd30-7782375082ed",
+                "5e7bda76-6dad-46c2-af76-5464ded3484f"
+            ]
+        }
+    ]
+}

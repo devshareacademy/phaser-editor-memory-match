@@ -52,6 +52,26 @@
             "type": {
                 "id": "texture-config"
             }
+        },
+        {
+            "name": "cardClickEvent",
+            "label": "Card Click Event",
+            "tooltip": "The event that will be emitted when the card is clicked on.",
+            "defValue": "card-clicked",
+            "customDefinition": false,
+            "type": {
+                "id": "event"
+            }
+        },
+        {
+            "name": "cardFlipCompleteEvent",
+            "label": "Card Flip Complete Event",
+            "tooltip": "The event that is emitted when the card flip animation is completed.",
+            "defValue": "card-flip-complete",
+            "customDefinition": false,
+            "type": {
+                "id": "event"
+            }
         }
     ]
 }

@@ -2,6 +2,16 @@
     "section1": {
         "files": [
             {
+                "url": "assets/text/clickToPlay.png",
+                "type": "image",
+                "key": "clickToPlay"
+            },
+            {
+                "url": "assets/text/clickToPlayAgain.png",
+                "type": "image",
+                "key": "clickToPlayAgain"
+            },
+            {
                 "url": "assets/dino.png",
                 "key": "dino",
                 "type": "image"
@@ -12,10 +22,20 @@
                 "key": "fF5IT3"
             },
             {
+                "url": "assets/text/nice.png",
+                "type": "image",
+                "key": "nice"
+            },
+            {
                 "atlasURL": "assets/spritesheet.json",
                 "textureURL": "assets/spritesheet.png",
                 "type": "atlas",
                 "key": "spritesheet"
+            },
+            {
+                "url": "assets/text/title.png",
+                "type": "image",
+                "key": "title"
             }
         ]
     },

@@ -1,0 +1,129 @@
+{
+    "id": "45946cf1-e167-4a9f-ada0-2fe5b749f28c",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "importFileExtension": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": ""
+    },
+    "displayList": [
+        {
+            "type": "ScriptNode",
+            "id": "718a2e88-112f-4fe9-bb56-a835cef9e4f8",
+            "label": "scriptnode_1"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    },
+    "prefabProperties": [
+        {
+            "name": "to",
+            "label": "To",
+            "tooltip": "The value to animate to for this animation.",
+            "defValue": 0,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "from",
+            "label": "From",
+            "tooltip": "The value to animation from for this animation.",
+            "defValue": 0,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "duration",
+            "label": "Duration",
+            "tooltip": "How long this animation should last for in milliseconds.",
+            "defValue": 1000,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "repeat",
+            "label": "Repeat",
+            "tooltip": "The number of times this animation should repeat.",
+            "defValue": 0,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "property",
+            "label": "Property",
+            "tooltip": "Property to animate. Example x, y, scale, alpha, etc.",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "string"
+            }
+        },
+        {
+            "name": "autoExecute",
+            "label": "Auto Execute",
+            "tooltip": "Indicates if the animation should start right away.",
+            "defValue": false,
+            "customDefinition": false,
+            "type": {
+                "id": "boolean"
+            }
+        },
+        {
+            "name": "yoyo",
+            "label": "YoYo",
+            "tooltip": "Indicates if the animation should yoyo back to the original value before repeating or ending the animation.",
+            "defValue": false,
+            "customDefinition": false,
+            "type": {
+                "id": "boolean"
+            }
+        },
+        {
+            "name": "ease",
+            "label": "Ease",
+            "tooltip": "The ease to apply to this animation.",
+            "defValue": "sine.inout",
+            "customDefinition": false,
+            "type": {
+                "id": "string"
+            }
+        },
+        {
+            "name": "delay",
+            "label": "Delay",
+            "tooltip": "The number of milliseconds to wait before starting the animation",
+            "defValue": 0,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "target",
+            "label": "Target Game Object",
+            "tooltip": "The target game object for this animation.",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "object-var",
+                "expressionType": "Phaser.GameObjects.GameObject"
+            }
+        }
+    ]
+}

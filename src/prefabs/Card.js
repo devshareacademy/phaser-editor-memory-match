@@ -16,13 +16,7 @@ export default class Card extends Phaser.GameObjects.Image {
 		/* START-USER-CTR-CODE */
 		// Write your code here.
 		this.on(Phaser.Input.Events.POINTER_DOWN, () => {
-			console.log('click on card');
-			if (this.isFlipping) {
-				return;
-			}
-			this.isFlipping = true;
-			this.isFlipped = !this.isFlipped;
-			this.flipTimeLine.play(true);
+			this.scene.events.emit(this.cardClickEvent, (this));
 		});
 		this.flipTimeLine = this.scene.add.timeline([
 			{
@@ -55,7 +49,7 @@ export default class Card extends Phaser.GameObjects.Image {
 			{
 				at: 200,
 				run: () => {
-					this.isFlipping = false;
+					this.scene.events.emit(this.cardFlipCompleteEvent);
 				},
 			}
 		]);
@@ -66,13 +60,20 @@ export default class Card extends Phaser.GameObjects.Image {
 	cardFrontTextureConfig;
 	/** @type {{key:string,frame?:string|number}} */
 	cardBackTextureConfig = {"key":"spritesheet","frame":"Verse.png"};
+	/** @type {string} */
+	cardClickEvent = "card-clicked";
+	/** @type {string} */
+	cardFlipCompleteEvent = "card-flip-complete";
 
 	/* START-USER-CODE */
 
 	// Write your code here.
 	/** @type {boolean} */
-	isFlipping = false;
 	isFlipped = false;
+	flip() {
+		this.isFlipped = !this.isFlipped;
+		this.flipTimeLine.play(true);
+	}
 
 	/* END-USER-CODE */
 }

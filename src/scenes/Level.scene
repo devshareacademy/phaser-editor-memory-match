@@ -13,33 +13,314 @@
     },
     "displayList": [
         {
-            "type": "Image",
-            "id": "2caacd38-e09d-421c-95a6-2ab05028070a",
-            "label": "fF5IT3",
-            "displayName": "Background",
-            "texture": {
-                "key": "fF5IT3"
-            },
-            "x": -7,
-            "y": -28,
-            "scaleX": 0.72,
-            "scaleY": 0.72,
-            "originX": 0,
-            "originY": 0
+            "prefabId": "58b51a3f-17df-4544-8954-deacaba4533c",
+            "id": "18d82754-a484-41a9-954c-cb4cb5bdb08a",
+            "label": "background"
         },
         {
-            "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
-            "id": "9a733e3b-c6c1-4ce0-8941-04b1e2f1d468",
+            "type": "Container",
+            "id": "83cbd080-e15c-4881-b212-5fbd78997c11",
+            "label": "cardContainer",
+            "x": 640,
+            "y": 360,
+            "list": [
+                {
+                    "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
+                    "id": "9a733e3b-c6c1-4ce0-8941-04b1e2f1d468",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "cardFrontAssetKey",
+                        "cardFrontTextureConfig"
+                    ],
+                    "label": "card1",
+                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Skull.png\"}",
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
+                    "id": "fd1ceb5f-3da3-46ad-b9ef-21eb87b0f2b0",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "cardFrontTextureConfig"
+                    ],
+                    "label": "card2",
+                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Skull.png\"}",
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
+                    "id": "db4a7129-66ce-4390-b44c-659411ea19f8",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "cardFrontTextureConfig"
+                    ],
+                    "label": "card3",
+                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Pumpkin.png\"}",
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
+                    "id": "9ca71997-a4f4-4cbe-bcbc-c82f059df2cc",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "cardFrontTextureConfig"
+                    ],
+                    "label": "card4",
+                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Pumpkin.png\"}",
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
+                    "id": "0b4b54f0-8ea5-4cda-80c3-d28791a90b51",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "cardFrontTextureConfig"
+                    ],
+                    "label": "card",
+                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Cat.png\"}",
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
+                    "id": "4cb9bbf5-dba2-405d-a0fc-a280ac293eb6",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "cardFrontTextureConfig"
+                    ],
+                    "label": "card_1",
+                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Cat.png\"}",
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
+                    "id": "3d94a1a8-ec84-4d5c-8791-eb1220ff9d2f",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "cardFrontTextureConfig"
+                    ],
+                    "label": "card_2",
+                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Candy.png\"}",
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
+                    "id": "4d6b8634-d654-4ca3-9a72-51339567d195",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "cardFrontTextureConfig"
+                    ],
+                    "label": "card_3",
+                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Candy.png\"}",
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
+                    "id": "60a1e4bd-1c44-4a29-b2f2-a290c4f84873",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "cardFrontTextureConfig"
+                    ],
+                    "label": "card_4",
+                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Cadle.png\"}",
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
+                    "id": "c1386c03-689b-4177-9d2a-5149f05397e0",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "cardFrontTextureConfig"
+                    ],
+                    "label": "card_5",
+                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Cadle.png\"}",
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
+                    "id": "694a759c-8f9b-4e05-8797-0d939f4d00f4",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "cardFrontTextureConfig"
+                    ],
+                    "label": "card_6",
+                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Bat.png\"}",
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
+                    "id": "2364eef0-0a71-4a2f-9083-c833a7ff5c7e",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "cardFrontTextureConfig"
+                    ],
+                    "label": "card_7",
+                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Bat.png\"}",
+                    "x": 0,
+                    "y": 0
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "id": "29314e33-cfca-4bd5-894e-a1fe56268c32",
+            "label": "nice",
+            "texture": {
+                "key": "nice"
+            },
+            "x": 640,
+            "y": 360,
+            "scaleX": 0,
+            "scaleY": 0,
+            "list": [
+                {
+                    "prefabId": "45946cf1-e167-4a9f-ada0-2fe5b749f28c",
+                    "id": "ae17cacd-775d-40a1-b916-f73466d39b67",
+                    "unlock": [
+                        "to",
+                        "duration",
+                        "property"
+                    ],
+                    "label": "scaleNiceText",
+                    "displayName": "Scale in text",
+                    "to": 1.2,
+                    "duration": 2000,
+                    "property": "scale",
+                    "list": [
+                        {
+                            "prefabId": "3d0f9437-ede2-4a64-86fb-d4956574496b",
+                            "id": "a1328c83-fde2-4b08-a3ec-5d7f246619cc",
+                            "label": "sceneClickHandler",
+                            "list": [
+                                {
+                                    "prefabId": "45946cf1-e167-4a9f-ada0-2fe5b749f28c",
+                                    "id": "a226b279-58a2-4863-8f53-5ee4983d3e85",
+                                    "unlock": [
+                                        "to",
+                                        "from",
+                                        "property",
+                                        "duration",
+                                        "target"
+                                    ],
+                                    "label": "animateCardContainerOut",
+                                    "displayName": "Animate card container game object out of scene",
+                                    "to": 1200,
+                                    "from": 360,
+                                    "duration": 1000,
+                                    "property": "y",
+                                    "target": "cardContainer",
+                                    "list": [
+                                        {
+                                            "prefabId": "a64a709f-04f5-4972-a235-fca2a79f1c39",
+                                            "id": "a5ce2fdf-afa3-44a4-991e-76ff4b532661",
+                                            "label": "sceneRestart"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "prefabId": "45946cf1-e167-4a9f-ada0-2fe5b749f28c",
+                                    "id": "f7cf2d6f-c9b7-4663-b4a8-2b3f5ef24882",
+                                    "unlock": [
+                                        "to",
+                                        "duration",
+                                        "from",
+                                        "property",
+                                        "target"
+                                    ],
+                                    "label": "animatePlayAgainTextOut",
+                                    "displayName": "Animate play again text out of scene",
+                                    "to": 1200,
+                                    "from": 628,
+                                    "duration": 800,
+                                    "property": "y",
+                                    "target": "clickToPlayAgain"
+                                },
+                                {
+                                    "prefabId": "45946cf1-e167-4a9f-ada0-2fe5b749f28c",
+                                    "id": "a6a93a62-b3ae-47a5-9b4d-6729cf9d3620",
+                                    "unlock": [
+                                        "to",
+                                        "duration",
+                                        "from",
+                                        "property",
+                                        "target"
+                                    ],
+                                    "label": "animateNiceTextOut_1",
+                                    "displayName": "Animate nice text out of scene",
+                                    "to": -100,
+                                    "from": 360,
+                                    "duration": 800,
+                                    "property": "y",
+                                    "target": "nice"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "id": "04f3c170-2347-400d-8156-1fba8a864536",
+            "label": "clickToPlayAgain",
+            "texture": {
+                "key": "clickToPlayAgain"
+            },
+            "x": 640,
+            "y": 831,
+            "list": [
+                {
+                    "prefabId": "45946cf1-e167-4a9f-ada0-2fe5b749f28c",
+                    "id": "7c87f8b8-a56f-48c2-bb48-a17452105697",
+                    "unlock": [
+                        "to",
+                        "from",
+                        "property",
+                        "delay"
+                    ],
+                    "label": "animationConfigBase",
+                    "to": 628,
+                    "from": 830,
+                    "property": "y",
+                    "delay": 2000
+                }
+            ]
+        },
+        {
+            "prefabId": "7b9885a6-7e0f-4203-ac7b-e6aa86c7882d",
+            "id": "a957d75a-aed6-4e66-b531-a4430bb9c8b7",
             "unlock": [
-                "x",
-                "y",
-                "cardFrontAssetKey",
-                "cardFrontTextureConfig"
+                "cards",
+                "property",
+                "cardContainer",
+                "gameOverScriptNodes"
             ],
-            "label": "card",
-            "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Bat.png\"}",
-            "x": 213,
-            "y": 135
+            "label": "gamePlay",
+            "cards": "cards",
+            "cardContainer": "cardContainer",
+            "gameOverScriptNodes": "gameOverScriptNodes"
         }
     ],
     "plainObjects": [],
@@ -48,5 +329,33 @@
         "url": "https://phaser.io/editor",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 5
-    }
+    },
+    "lists": [
+        {
+            "id": "33e8bebe-ba30-4659-b390-be22f0c77fcd",
+            "label": "cards",
+            "objectIds": [
+                "2364eef0-0a71-4a2f-9083-c833a7ff5c7e",
+                "694a759c-8f9b-4e05-8797-0d939f4d00f4",
+                "c1386c03-689b-4177-9d2a-5149f05397e0",
+                "60a1e4bd-1c44-4a29-b2f2-a290c4f84873",
+                "4d6b8634-d654-4ca3-9a72-51339567d195",
+                "3d94a1a8-ec84-4d5c-8791-eb1220ff9d2f",
+                "4cb9bbf5-dba2-405d-a0fc-a280ac293eb6",
+                "0b4b54f0-8ea5-4cda-80c3-d28791a90b51",
+                "9ca71997-a4f4-4cbe-bcbc-c82f059df2cc",
+                "db4a7129-66ce-4390-b44c-659411ea19f8",
+                "fd1ceb5f-3da3-46ad-b9ef-21eb87b0f2b0",
+                "9a733e3b-c6c1-4ce0-8941-04b1e2f1d468"
+            ]
+        },
+        {
+            "id": "354a1a18-a0ac-400a-9ce6-7d4bee0d1150",
+            "label": "gameOverScriptNodes",
+            "objectIds": [
+                "ae17cacd-775d-40a1-b916-f73466d39b67",
+                "7c87f8b8-a56f-48c2-bb48-a17452105697"
+            ]
+        }
+    ]
 }
