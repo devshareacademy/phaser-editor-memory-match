@@ -1,0 +1,29 @@
+Project Setup:
+  ☐ create new phaser editor project
+  ☐ run game locally
+  ☐ load and setup game assets
+  ☐ add scripts
+
+Level Setup:
+  ☐ create background component
+  ☐ create card component
+  ☐ flip card on click
+  ☐ create cards and board layout
+
+Gameplay:
+  ☐ create gameplay node script
+  ☐ connect game properties to script
+  ☐ review memory match library
+  ☐ add game logic
+
+Title Scene:
+  ☐ create title scene layout
+  ☐ connect to level scene
+  ☐ create text animations
+
+Level Scene Polish:
+  ☐ dealing cards animation
+  ☐ add text on game over
+  ☐ game over animations
+  ☐ restart game
+  ☐ background audio

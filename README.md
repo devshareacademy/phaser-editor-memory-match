@@ -15,3 +15,12 @@ This project includes the script libraries:
 
 - [@phaserjs/editor-scripts-core](https://github.com/phaserjs/editor-scripts-core)
 - [@phaserjs/editor-simple-animations](https://github.com/phaserjs/editor-scripts-simple-animations#duration-config)
+
+
+## Assets
+
+https://jonathanvolpi.itch.io/memory-game-template-halloween
+https://nonemo.itch.io/dark-halloween
+https://oscarleites.itch.io/free-halloween-music-pack
+
+https://www.onlineconverter.com/compress-mp3
