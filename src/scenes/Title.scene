@@ -1,5 +1,5 @@
 {
-    "id": "a7e59a0d-5faa-4789-a22e-1641ca07a23d",
+    "id": "5cf33b72-69da-4f9c-b0dd-eaba21471408",
     "sceneType": "SCENE",
     "settings": {
         "exportClass": true,
@@ -13,13 +13,13 @@
     },
     "displayList": [
         {
-            "prefabId": "58b51a3f-17df-4544-8954-deacaba4533c",
-            "id": "e81e9df0-e051-4e88-92e5-772af42c029a",
+            "prefabId": "ed7b1076-57f2-467c-b61c-48a3d5c466bf",
+            "id": "b0c97336-e973-4047-b010-af4d2caea88c",
             "label": "background"
         },
         {
             "type": "Image",
-            "id": "5e7bda76-6dad-46c2-af76-5464ded3484f",
+            "id": "53c21f84-2250-4b2c-9b1e-444afc03069c",
             "label": "title",
             "texture": {
                 "key": "title"
@@ -31,31 +31,33 @@
             "list": [
                 {
                     "prefabId": "45946cf1-e167-4a9f-ada0-2fe5b749f28c",
-                    "id": "6bbcbfc0-78d3-4837-b38f-6e468e35d33c",
+                    "id": "49ae316b-dfe4-4568-939e-9b2b871bbf48",
                     "unlock": [
                         "to",
+                        "from",
                         "duration",
                         "property",
                         "autoExecute"
                     ],
-                    "label": "scaleTitle",
+                    "label": "animationConfigBase",
                     "displayName": "Scale in title text",
                     "to": 1,
+                    "from": 0,
                     "duration": 2000,
                     "property": "scale",
                     "autoExecute": true,
                     "list": [
                         {
                             "prefabId": "45946cf1-e167-4a9f-ada0-2fe5b749f28c",
-                            "id": "0ac5df42-f80e-40b6-888d-b1b3fd72a623",
+                            "id": "2c4d6940-e2fe-446e-a749-da40169e4d2f",
                             "unlock": [
-                                "from",
                                 "to",
+                                "from",
                                 "repeat",
-                                "yoyo",
-                                "property"
+                                "property",
+                                "yoyo"
                             ],
-                            "label": "yoyoY",
+                            "label": "animationConfigBase_1",
                             "displayName": "Animate title text up and down",
                             "to": 226,
                             "from": 246,
@@ -69,7 +71,7 @@
         },
         {
             "type": "Image",
-            "id": "0881c1d0-23f4-4c63-bd30-7782375082ed",
+            "id": "83b9fd4d-19ac-49df-a272-85093fdcbc79",
             "label": "clickToPlay",
             "texture": {
                 "key": "clickToPlay"
@@ -84,7 +86,7 @@
             "list": [
                 {
                     "prefabId": "45946cf1-e167-4a9f-ada0-2fe5b749f28c",
-                    "id": "c1996b1a-d4d2-46e8-98f1-dc11de622104",
+                    "id": "7158d896-3384-4396-8308-73d95058568a",
                     "unlock": [
                         "to",
                         "from",
@@ -94,7 +96,7 @@
                         "yoyo",
                         "delay"
                     ],
-                    "label": "fadeIn",
+                    "label": "animationConfigBase_2",
                     "displayName": "Fade in text",
                     "to": 1,
                     "from": 0.2,
@@ -107,30 +109,8 @@
             ]
         },
         {
-            "prefabId": "2dc0af1b-bed4-4583-88df-8fd91f7139a1",
-            "id": "c5706707-765d-40e7-8423-834bc97af4b3",
-            "unlock": [
-                "x",
-                "y"
-            ],
-            "label": "fullScreenButton",
-            "x": 1238,
-            "y": 42
-        },
-        {
-            "prefabId": "87adfd66-2fb0-478e-b6f8-bf77e81b8fd9",
-            "id": "d005f3b4-e30c-4e85-a3fa-1844bc195382",
-            "unlock": [
-                "key",
-                "loop"
-            ],
-            "label": "audioPrefab",
-            "key": "3-Midnight-Candy-Chase-loop",
-            "loop": true
-        },
-        {
             "prefabId": "3d0f9437-ede2-4a64-86fb-d4956574496b",
-            "id": "96de52ab-c391-49bb-a82e-2ae128245178",
+            "id": "0d23c42c-67ae-4fb0-9e32-d2140978e906",
             "unlock": [
                 "autoExecute"
             ],
@@ -138,64 +118,13 @@
             "autoExecute": true,
             "list": [
                 {
-                    "prefabId": "c687f09d-b8c1-424c-8ce4-9c275974b51d",
-                    "id": "c2ee0738-c3d2-49b7-9092-6d91ea8c343e",
+                    "prefabId": "f737f7db-81b4-4411-8b05-4b9dcdbc91f1",
+                    "id": "853f91ca-9c72-4953-babe-73682c1166fe",
                     "unlock": [
-                        "targetGameObject",
-                        "targetGameObjects"
+                        "sceneName"
                     ],
-                    "label": "stopTitleTextTweens",
-                    "displayName": "Stop the title text tweens.",
-                    "targetGameObjects": "textGameObjects",
-                    "list": [
-                        {
-                            "prefabId": "45946cf1-e167-4a9f-ada0-2fe5b749f28c",
-                            "id": "579705ba-468b-47dd-8a49-a87baa4ff43f",
-                            "unlock": [
-                                "to",
-                                "from",
-                                "target",
-                                "property",
-                                "duration"
-                            ],
-                            "label": "moveTitleTextOut",
-                            "displayName": "Move title text at",
-                            "to": -50,
-                            "from": 246,
-                            "duration": 800,
-                            "property": "y",
-                            "target": "title",
-                            "list": [
-                                {
-                                    "prefabId": "f737f7db-81b4-4411-8b05-4b9dcdbc91f1",
-                                    "id": "7b5b15a9-c619-4aea-80ac-c8f32cef094b",
-                                    "unlock": [
-                                        "sceneName"
-                                    ],
-                                    "label": "startScene",
-                                    "sceneName": "Level"
-                                }
-                            ]
-                        },
-                        {
-                            "prefabId": "45946cf1-e167-4a9f-ada0-2fe5b749f28c",
-                            "id": "da92a5ba-04ae-4725-b8a8-39e4c22260a3",
-                            "unlock": [
-                                "to",
-                                "from",
-                                "target",
-                                "property",
-                                "duration"
-                            ],
-                            "label": "moveAltText",
-                            "displayName": "Move alt text out of scene",
-                            "to": 800,
-                            "from": 521,
-                            "duration": 800,
-                            "property": "y",
-                            "target": "clickToPlay"
-                        }
-                    ]
+                    "label": "startScene",
+                    "sceneName": "Level"
                 }
             ]
         }
@@ -206,15 +135,5 @@
         "url": "https://phaser.io/editor",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 5
-    },
-    "lists": [
-        {
-            "id": "ba8fe61a-867d-4c69-a5ef-313506722970",
-            "label": "textGameObjects",
-            "objectIds": [
-                "0881c1d0-23f4-4c63-bd30-7782375082ed",
-                "5e7bda76-6dad-46c2-af76-5464ded3484f"
-            ]
-        }
-    ]
+    }
 }

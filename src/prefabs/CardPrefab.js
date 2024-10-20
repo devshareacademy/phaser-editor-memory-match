@@ -6,7 +6,7 @@
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
-export default class Card extends Phaser.GameObjects.Image {
+export default class CardPrefab extends Phaser.GameObjects.Image {
 
 	constructor(scene, x, y, texture, frame) {
 		super(scene, x ?? 0, y ?? 0, texture || "spritesheet", frame ?? "Verse.png");
@@ -16,17 +16,16 @@ export default class Card extends Phaser.GameObjects.Image {
 		/* START-USER-CTR-CODE */
 		// Write your code here.
 		this.on(Phaser.Input.Events.POINTER_DOWN, () => {
-			this.scene.events.emit(this.cardClickEvent, (this));
+			this.scene.events.emit('card-clicked', (this));
 		});
 		this.flipTimeLine = this.scene.add.timeline([
 			{
 				tween: {
 					targets: this,
-					alpha: 1,
 					scaleX: 0,
 					scaleY: 1.2,
 					duration: 100,
-					ease: Phaser.Math.Easing.Linear,
+					ease: Phaser.Math.Easing.Linear
 				},
 			},
 			{
@@ -34,7 +33,7 @@ export default class Card extends Phaser.GameObjects.Image {
 				run: () => {
 					const textureConfig = this.isFlipped ? this.cardFrontTextureConfig : this.cardBackTextureConfig;
 					this.setTexture(textureConfig.key, textureConfig.frame);
-				},
+				}
 			},
 			{
 				at: 100,
@@ -43,13 +42,7 @@ export default class Card extends Phaser.GameObjects.Image {
 					scaleX: 1,
 					scaleY: 1,
 					duration: 100,
-					ease: Phaser.Math.Easing.Linear,
-				},
-			},
-			{
-				at: 200,
-				run: () => {
-					this.scene.events.emit(this.cardFlipCompleteEvent);
+					ease: Phaser.Math.Easing.Linear
 				},
 			}
 		]);
@@ -60,16 +53,15 @@ export default class Card extends Phaser.GameObjects.Image {
 	cardFrontTextureConfig;
 	/** @type {{key:string,frame?:string|number}} */
 	cardBackTextureConfig = {"key":"spritesheet","frame":"Verse.png"};
-	/** @type {string} */
-	cardClickEvent = "card-clicked";
-	/** @type {string} */
-	cardFlipCompleteEvent = "card-flip-complete";
 
 	/* START-USER-CODE */
 
 	// Write your code here.
+	/** @type {Phaser.Time.Timeline} */
+	flipTimeLine;
 	/** @type {boolean} */
 	isFlipped = false;
+
 	flip() {
 		this.isFlipped = !this.isFlipped;
 		this.flipTimeLine.play(true);
@@ -79,3 +71,5 @@ export default class Card extends Phaser.GameObjects.Image {
 }
 
 /* END OF COMPILED CODE */
+
+// You can write more code here

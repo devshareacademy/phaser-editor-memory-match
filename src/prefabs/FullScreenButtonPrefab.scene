@@ -1,5 +1,5 @@
 {
-    "id": "2dc0af1b-bed4-4583-88df-8fd91f7139a1",
+    "id": "04696daf-8cb8-4505-9163-cbbd1613d42b",
     "sceneType": "PREFAB",
     "settings": {
         "exportClass": true,
@@ -14,7 +14,7 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "d49b1d97-ee3b-4ebb-aeb2-d70829d32d5b",
+            "id": "966f1872-cb39-45d2-88bf-7ca649ccc86a",
             "label": "fullscreen0",
             "hitArea.shape": "RECTANGLE",
             "hitArea.width": 64,

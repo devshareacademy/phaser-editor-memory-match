@@ -1,5 +1,5 @@
 {
-    "id": "7b9885a6-7e0f-4203-ac7b-e6aa86c7882d",
+    "id": "69b80298-092e-4106-a544-0d058acb7b4b",
     "sceneType": "PREFAB",
     "settings": {
         "exportClass": true,
@@ -14,7 +14,7 @@
     "displayList": [
         {
             "type": "ScriptNode",
-            "id": "0499a365-56dc-40dd-b1c5-b657e4954f05",
+            "id": "eba489ba-2444-4a91-9834-f07c8c25836d",
             "label": "scriptnode_1"
         }
     ],
@@ -29,38 +29,18 @@
         {
             "name": "cards",
             "label": "Cards",
-            "tooltip": "List of Card game objects.",
+            "tooltip": "List of Card Game Objects",
             "defValue": "[]",
             "customDefinition": false,
             "type": {
                 "id": "object-var",
-                "expressionType": "Card[]"
-            }
-        },
-        {
-            "name": "cardClickEvent",
-            "label": "Card Click Event",
-            "tooltip": "The event to listen to when a card is clicked on.",
-            "defValue": "card-clicked",
-            "customDefinition": false,
-            "type": {
-                "id": "event"
-            }
-        },
-        {
-            "name": "cardFlipCompleteEvent",
-            "label": "Card Flip Complete Event",
-            "tooltip": "The event to listen to for when a card flip animation is completed.",
-            "defValue": "card-flip-complete",
-            "customDefinition": false,
-            "type": {
-                "id": "event"
+                "expressionType": "CardPrefab[]"
             }
         },
         {
             "name": "cardContainer",
             "label": "Card Container",
-            "tooltip": "The card container game object.",
+            "tooltip": "The container game object that has all of our cards.",
             "defValue": "",
             "customDefinition": false,
             "type": {
@@ -71,7 +51,7 @@
         {
             "name": "gameOverScriptNodes",
             "label": "Game Over Script Nodes",
-            "tooltip": "Game Over script nodes to execute",
+            "tooltip": "Game over script nodes to execute.",
             "defValue": "[]",
             "customDefinition": false,
             "type": {

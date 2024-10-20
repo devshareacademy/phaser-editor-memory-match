@@ -3,13 +3,10 @@
 
 /* START OF COMPILED CODE */
 
-import Background from "../prefabs/Background.js";
-import AnimationConfigBase from "../scriptnodes/animations/AnimationConfigBase.js";
-import FullScreenButton from "../prefabs/FullScreenButton.js";
-import AudioPrefab from "../scriptnodes/misc/AudioPrefab.js";
-import SceneClickHandler from "../scriptnodes/misc/SceneClickHandler.js";
-import StopGameObjectTweens from "../scriptnodes/animations/StopGameObjectTweens.js";
-import StartScene from "../scriptnodes/misc/StartScene.js";
+import BackgroundPrefab from "../prefabs/BackgroundPrefab.js";
+import AnimationConfigBase from "../scripts/scriptnodes/AnimationConfigBase.js";
+import SceneClickHandler from "../scripts/scriptnodes/SceneClickHandler.js";
+import StartScene from "../scripts/scriptnodes/StartScene.js";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -27,7 +24,7 @@ export default class Title extends Phaser.Scene {
 	editorCreate() {
 
 		// background
-		const background = new Background(this);
+		const background = new BackgroundPrefab(this);
 		this.add.existing(background);
 
 		// title
@@ -35,11 +32,11 @@ export default class Title extends Phaser.Scene {
 		title.scaleX = 0;
 		title.scaleY = 0;
 
-		// scaleTitle
-		const scaleTitle = new AnimationConfigBase(title);
+		// animationConfigBase
+		const animationConfigBase = new AnimationConfigBase(title);
 
-		// yoyoY
-		const yoyoY = new AnimationConfigBase(scaleTitle);
+		// animationConfigBase_1
+		const animationConfigBase_1 = new AnimationConfigBase(animationConfigBase);
 
 		// clickToPlay
 		const clickToPlay = this.add.image(640, 521, "clickToPlay");
@@ -49,90 +46,46 @@ export default class Title extends Phaser.Scene {
 		clickToPlay.alphaBottomLeft = 0;
 		clickToPlay.alphaBottomRight = 0;
 
-		// fadeIn
-		const fadeIn = new AnimationConfigBase(clickToPlay);
-
-		// fullScreenButton
-		const fullScreenButton = new FullScreenButton(this, 1238, 42);
-		this.add.existing(fullScreenButton);
-
-		// audioPrefab
-		const audioPrefab = new AudioPrefab(this);
+		// animationConfigBase_2
+		const animationConfigBase_2 = new AnimationConfigBase(clickToPlay);
 
 		// sceneClickHandler
 		const sceneClickHandler = new SceneClickHandler(this);
 
-		// stopTitleTextTweens
-		const stopTitleTextTweens = new StopGameObjectTweens(sceneClickHandler);
-
-		// moveTitleTextOut
-		const moveTitleTextOut = new AnimationConfigBase(stopTitleTextTweens);
-
 		// startScene
-		const startScene = new StartScene(moveTitleTextOut);
+		const startScene = new StartScene(sceneClickHandler);
 
-		// moveAltText
-		const moveAltText = new AnimationConfigBase(stopTitleTextTweens);
+		// animationConfigBase (prefab fields)
+		animationConfigBase.to = 1;
+		animationConfigBase.from = 0;
+		animationConfigBase.duration = 2000;
+		animationConfigBase.property = "scale";
+		animationConfigBase.autoExecute = true;
 
-		// lists
-		const textGameObjects = [clickToPlay, title];
+		// animationConfigBase_1 (prefab fields)
+		animationConfigBase_1.to = 226;
+		animationConfigBase_1.from = 246;
+		animationConfigBase_1.repeat = -1;
+		animationConfigBase_1.property = "y";
+		animationConfigBase_1.yoyo = true;
 
-		// scaleTitle (prefab fields)
-		scaleTitle.to = 1;
-		scaleTitle.duration = 2000;
-		scaleTitle.property = "scale";
-		scaleTitle.autoExecute = true;
-
-		// yoyoY (prefab fields)
-		yoyoY.to = 226;
-		yoyoY.from = 246;
-		yoyoY.repeat = -1;
-		yoyoY.property = "y";
-		yoyoY.yoyo = true;
-
-		// fadeIn (prefab fields)
-		fadeIn.to = 1;
-		fadeIn.from = 0.2;
-		fadeIn.repeat = -1;
-		fadeIn.property = "alpha";
-		fadeIn.autoExecute = true;
-		fadeIn.yoyo = true;
-		fadeIn.delay = 1500;
-
-		// audioPrefab (prefab fields)
-		audioPrefab.key = "3-Midnight-Candy-Chase-loop";
-		audioPrefab.loop = true;
+		// animationConfigBase_2 (prefab fields)
+		animationConfigBase_2.to = 1;
+		animationConfigBase_2.from = 0.2;
+		animationConfigBase_2.repeat = -1;
+		animationConfigBase_2.property = "alpha";
+		animationConfigBase_2.autoExecute = true;
+		animationConfigBase_2.yoyo = true;
+		animationConfigBase_2.delay = 1500;
 
 		// sceneClickHandler (prefab fields)
 		sceneClickHandler.autoExecute = true;
 
-		// stopTitleTextTweens (prefab fields)
-		stopTitleTextTweens.targetGameObjects = textGameObjects;
-
-		// moveTitleTextOut (prefab fields)
-		moveTitleTextOut.to = -50;
-		moveTitleTextOut.from = 246;
-		moveTitleTextOut.duration = 800;
-		moveTitleTextOut.property = "y";
-		moveTitleTextOut.target = title;
-
 		// startScene (prefab fields)
 		startScene.sceneName = "Level";
 
-		// moveAltText (prefab fields)
-		moveAltText.to = 800;
-		moveAltText.from = 521;
-		moveAltText.duration = 800;
-		moveAltText.property = "y";
-		moveAltText.target = clickToPlay;
-
-		this.textGameObjects = textGameObjects;
-
 		this.events.emit("scene-awake");
 	}
-
-	/** @type {Phaser.GameObjects.Image[]} */
-	textGameObjects;
 
 	/* START-USER-CODE */
 
@@ -141,6 +94,7 @@ export default class Title extends Phaser.Scene {
 	create() {
 
 		this.editorCreate();
+		this.scene.launch("Ui");
 	}
 
 	/* END-USER-CODE */

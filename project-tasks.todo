@@ -4,8 +4,13 @@ Project Setup:
   ☐ load and setup game assets
   ☐ add scripts
 
-Level Setup:
+Title Scene:
   ☐ create background component
+  ☐ create title scene layout
+  ☐ connect to level scene
+
+Level Setup:
+  ☐ create background
   ☐ create card component
   ☐ flip card on click
   ☐ create cards and board layout
@@ -16,14 +21,11 @@ Gameplay:
   ☐ review memory match library
   ☐ add game logic
 
-Title Scene:
-  ☐ create title scene layout
-  ☐ connect to level scene
-  ☐ create text animations
-
-Level Scene Polish:
+Game Polish:
   ☐ dealing cards animation
   ☐ add text on game over
   ☐ game over animations
   ☐ restart game
   ☐ background audio
+  ☐ create text animations
+  ☐ fullscreen

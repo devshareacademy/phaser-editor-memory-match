@@ -4,6 +4,4 @@ scene-awake An event emitted at the end of the `editorCreate()` method generated
 
 # Add your events like this:
 #
-# my-event My event documentation. 
-card-clicked Emitted when a card object is clicked on. This event will include the card game object that was clicked.
-card-flip-complete Emitted when a card object has finished flipping over.
+# my-event My event documentation.

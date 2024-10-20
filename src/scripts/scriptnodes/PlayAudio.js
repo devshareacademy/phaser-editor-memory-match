@@ -7,7 +7,7 @@ import ScriptNode from "../../../phaserjs_editor_scripts_base/ScriptNode.js";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
-export default class AudioPrefab extends ScriptNode {
+export default class PlayAudio extends ScriptNode {
 
 	constructor(parent) {
 		super(parent);

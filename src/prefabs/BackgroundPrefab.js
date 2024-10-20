@@ -6,10 +6,10 @@
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
-export default class Background extends Phaser.GameObjects.Image {
+export default class BackgroundPrefab extends Phaser.GameObjects.Image {
 
 	constructor(scene, x, y, texture, frame) {
-		super(scene, x ?? -7, y ?? -28, texture || "fF5IT3", frame);
+		super(scene, x ?? -7, y ?? -28, texture || "background_1", frame);
 
 		this.scaleX = 0.72;
 		this.scaleY = 0.72;

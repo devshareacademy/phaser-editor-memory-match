@@ -6,21 +6,21 @@
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
-export default class FullScreenButton extends Phaser.GameObjects.Image {
+export default class FullScreenButtonPrefab extends Phaser.GameObjects.Image {
 
 	constructor(scene, x, y, texture, frame) {
 		super(scene, x ?? 0, y ?? 0, texture || "fullscreen", frame ?? 0);
 
 		this.setInteractive(new Phaser.Geom.Rectangle(0, 0, 64, 64), Phaser.Geom.Rectangle.Contains);
 
-		/* START-USER-CTR-CODE */
-		// Write your code here.
 		if (this.scene.scale.isFullscreen) {
 			this.setFrame(1);
 		} else {
 			this.setFrame(0);
 		}
 
+		/* START-USER-CTR-CODE */
+		// Write your code here.
 		this.on(Phaser.Input.Events.POINTER_UP, () => {
 			if (this.scene.scale.isFullscreen) {
 				this.setFrame(0);

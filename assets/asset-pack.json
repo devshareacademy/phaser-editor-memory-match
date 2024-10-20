@@ -3,18 +3,23 @@
         "files": [
             {
                 "url": [
-                    "assets/3-Midnight-Candy-Chase-loop.mp3"
+                    "assets/audio/background.mp3"
                 ],
                 "type": "audio",
-                "key": "3-Midnight-Candy-Chase-loop"
+                "key": "background"
             },
             {
-                "url": "assets/text/clickToPlay.png",
+                "url": "assets/images/background.png",
+                "type": "image",
+                "key": "background_1"
+            },
+            {
+                "url": "assets/images/text/clickToPlay.png",
                 "type": "image",
                 "key": "clickToPlay"
             },
             {
-                "url": "assets/text/clickToPlayAgain.png",
+                "url": "assets/images/text/clickToPlayAgain.png",
                 "type": "image",
                 "key": "clickToPlayAgain"
             },
@@ -24,12 +29,7 @@
                 "type": "image"
             },
             {
-                "url": "assets/fF5IT3.png",
-                "type": "image",
-                "key": "fF5IT3"
-            },
-            {
-                "url": "assets/fullscreen.png",
+                "url": "assets/images/fullscreen.png",
                 "frameConfig": {
                     "frameWidth": 64,
                     "frameHeight": 64,
@@ -42,18 +42,18 @@
                 "key": "fullscreen"
             },
             {
-                "url": "assets/text/nice.png",
+                "url": "assets/images/text/nice.png",
                 "type": "image",
                 "key": "nice"
             },
             {
-                "atlasURL": "assets/spritesheet.json",
-                "textureURL": "assets/spritesheet.png",
+                "atlasURL": "assets/images/spritesheet.json",
+                "textureURL": "assets/images/spritesheet.png",
                 "type": "atlas",
                 "key": "spritesheet"
             },
             {
-                "url": "assets/text/title.png",
+                "url": "assets/images/text/title.png",
                 "type": "image",
                 "key": "title"
             }

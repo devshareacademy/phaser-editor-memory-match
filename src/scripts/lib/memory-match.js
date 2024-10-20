@@ -7,6 +7,10 @@ function shuffleArray(array) {
     }
 }
 
+const utils_1 = {
+    shuffleArray,
+};
+
 export class MemoryMatch {
     /** Array containing card identifiers (e.g., numbers, strings). */
     #cards;
@@ -29,6 +33,11 @@ export class MemoryMatch {
      * on the two objects for equality.
      */
     #howToCheckForMatch;
+    /** Function that is used for shuffling cards array in place. If not provided, a default in place shuffle
+     *  using the Fisher-Yates algorithm will be used. This is useful for testing or when a client wants to use
+     *  a different shuffle algorithm.
+     */
+    #howToShuffle;
     constructor(config) {
         this.#cards = config.cards;
         this.#flippedCards = [];
@@ -38,9 +47,10 @@ export class MemoryMatch {
         this.#onMismatchCallback = config.onMismatchCallback;
         this.#onGameOverCallback = config.onGameOverCallback;
         this.#howToCheckForMatch = config.howToCheckForMatch;
+        this.#howToShuffle = config.howToShuffle;
         this.#isGameOver = false;
         // shuffle the provided cards
-        (0, shuffleArray)(this.#cards);
+        this.#shuffle();
     }
     get isGameOver() {
         return this.#isGameOver;
@@ -83,6 +93,17 @@ export class MemoryMatch {
         }
     }
     /**
+     * Resets the game by shuffling the cards and clearing any flipped or matched cards.
+     * Keeps the same card set but reshuffles them.
+     */
+    resetGame() {
+        // Reshuffle the cards
+        this.#shuffle();
+        // clear existing flipped and matched cards
+        this.#flippedCards = [];
+        this.#matchedCards.clear();
+    }
+    /**
      * Compares the two flipped cards to determine if they match.
      * Calls onMatch if the cards match, or onMismatch if they don't.
      * Resets the flippedCards array after checking.
@@ -120,15 +141,12 @@ export class MemoryMatch {
         // Reset the flipped cards array for the next turn
         this.#flippedCards = [];
     }
-    /**
-     * Resets the game by shuffling the cards and clearing any flipped or matched cards.
-     * Keeps the same card set but reshuffles them.
-     */
-    resetGame() {
-        // Reshuffle the cards
-        (0, shuffleArray)(this.#cards);
-        // clear existing flipped and matched cards
-        this.#flippedCards = [];
-        this.#matchedCards.clear();
+    #shuffle() {
+        // shuffle cards using client provided function if provided
+        if (this.#howToShuffle !== undefined) {
+            this.#howToShuffle(this.#cards);
+            return;
+        }
+        (0, utils_1.shuffleArray)(this.#cards);
     }
 }

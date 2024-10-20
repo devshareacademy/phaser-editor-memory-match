@@ -1,5 +1,5 @@
 {
-    "id": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
+    "id": "9f9dc0f2-41d5-4853-8375-ac0a4df61915",
     "sceneType": "PREFAB",
     "settings": {
         "exportClass": true,
@@ -14,8 +14,8 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "0b4552d7-707b-404f-82a1-2912199d75f1",
-            "label": "image_1",
+            "id": "eee684d7-16b9-4fbb-a89b-69fc839e7a38",
+            "label": "verse_png",
             "hitArea.shape": "RECTANGLE",
             "hitArea.width": 144,
             "hitArea.height": 144,
@@ -46,31 +46,11 @@
         {
             "name": "cardBackTextureConfig",
             "label": "Card Back Texture Config",
-            "tooltip": "The texture config to use for the back of the card.",
+            "tooltip": "The asset key to use for the back of the card.",
             "defValue": "{\"key\":\"spritesheet\",\"frame\":\"Verse.png\"}",
             "customDefinition": false,
             "type": {
                 "id": "texture-config"
-            }
-        },
-        {
-            "name": "cardClickEvent",
-            "label": "Card Click Event",
-            "tooltip": "The event that will be emitted when the card is clicked on.",
-            "defValue": "card-clicked",
-            "customDefinition": false,
-            "type": {
-                "id": "event"
-            }
-        },
-        {
-            "name": "cardFlipCompleteEvent",
-            "label": "Card Flip Complete Event",
-            "tooltip": "The event that is emitted when the card flip animation is completed.",
-            "defValue": "card-flip-complete",
-            "customDefinition": false,
-            "type": {
-                "id": "event"
             }
         }
     ]

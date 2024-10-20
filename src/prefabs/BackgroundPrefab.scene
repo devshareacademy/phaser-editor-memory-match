@@ -1,5 +1,5 @@
 {
-    "id": "58b51a3f-17df-4544-8954-deacaba4533c",
+    "id": "ed7b1076-57f2-467c-b61c-48a3d5c466bf",
     "sceneType": "PREFAB",
     "settings": {
         "exportClass": true,
@@ -14,10 +14,10 @@
     "displayList": [
         {
             "type": "Image",
-            "id": "988e42c5-0a9d-47a4-b9f4-83eddcdedac2",
-            "label": "fF5IT3",
+            "id": "c620a817-4a41-46c4-89c6-6f6435b0edae",
+            "label": "background",
             "texture": {
-                "key": "fF5IT3"
+                "key": "background_1"
             },
             "x": -7,
             "y": -28,

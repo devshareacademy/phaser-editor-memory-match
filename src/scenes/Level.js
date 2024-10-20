@@ -3,13 +3,12 @@
 
 /* START OF COMPILED CODE */
 
-import Background from "../prefabs/Background.js";
-import Card from "../prefabs/Card.js";
-import AnimationConfigBase from "../scriptnodes/animations/AnimationConfigBase.js";
-import SceneClickHandler from "../scriptnodes/misc/SceneClickHandler.js";
-import SceneRestart from "../scriptnodes/misc/SceneRestart.js";
-import GamePlay from "../scriptnodes/GamePlay.js";
-import FullScreenButton from "../prefabs/FullScreenButton.js";
+import BackgroundPrefab from "../prefabs/BackgroundPrefab.js";
+import CardPrefab from "../prefabs/CardPrefab.js";
+import AnimationConfigBase from "../scripts/scriptnodes/AnimationConfigBase.js";
+import SceneClickHandler from "../scripts/scriptnodes/SceneClickHandler.js";
+import SceneRestart from "../scripts/scriptnodes/SceneRestart.js";
+import GamePlay from "../scripts/GamePlay.js";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -26,60 +25,60 @@ export default class Level extends Phaser.Scene {
 	/** @returns {void} */
 	editorCreate() {
 
-		// background
-		const background = new Background(this);
-		this.add.existing(background);
+		// backgroundPrefab
+		const backgroundPrefab = new BackgroundPrefab(this);
+		this.add.existing(backgroundPrefab);
 
 		// cardContainer
 		const cardContainer = this.add.container(640, 360);
 
-		// card1
-		const card1 = new Card(this, 0, 0);
-		cardContainer.add(card1);
-
-		// card2
-		const card2 = new Card(this, 0, 0);
-		cardContainer.add(card2);
-
-		// card3
-		const card3 = new Card(this, 0, 0);
-		cardContainer.add(card3);
-
-		// card4
-		const card4 = new Card(this, 0, 0);
-		cardContainer.add(card4);
-
-		// card
-		const card = new Card(this, 0, 0);
-		cardContainer.add(card);
+		// card_12
+		const card_12 = new CardPrefab(this, 0, 0);
+		cardContainer.add(card_12);
 
 		// card_1
-		const card_1 = new Card(this, 0, 0);
+		const card_1 = new CardPrefab(this, 0, 0);
 		cardContainer.add(card_1);
 
 		// card_2
-		const card_2 = new Card(this, 0, 0);
+		const card_2 = new CardPrefab(this, 0, 0);
 		cardContainer.add(card_2);
 
 		// card_3
-		const card_3 = new Card(this, 0, 0);
+		const card_3 = new CardPrefab(this, 0, 0);
 		cardContainer.add(card_3);
 
 		// card_4
-		const card_4 = new Card(this, 0, 0);
+		const card_4 = new CardPrefab(this, 0, 0);
 		cardContainer.add(card_4);
 
 		// card_5
-		const card_5 = new Card(this, 0, 0);
+		const card_5 = new CardPrefab(this, 0, 0);
 		cardContainer.add(card_5);
 
 		// card_6
-		const card_6 = new Card(this, 0, 0);
+		const card_6 = new CardPrefab(this, 0, 0);
 		cardContainer.add(card_6);
 
 		// card_7
-		const card_7 = new Card(this, 0, 0);
+		const card_7 = new CardPrefab(this, 0, 0);
 		cardContainer.add(card_7);
+
+		// card_8
+		const card_8 = new CardPrefab(this, 0, 0);
+		cardContainer.add(card_8);
+
+		// card_9
+		const card_9 = new CardPrefab(this, 0, 0);
+		cardContainer.add(card_9);
+
+		// card_10
+		const card_10 = new CardPrefab(this, 0, 0);
+		cardContainer.add(card_10);
+
+		// card_11
+		const card_11 = new CardPrefab(this, 0, 0);
+		cardContainer.add(card_11);
 
 		// nice
 		const nice = this.add.image(640, 360, "nice");
@@ -92,20 +91,20 @@ export default class Level extends Phaser.Scene {
 		// sceneClickHandler
 		const sceneClickHandler = new SceneClickHandler(scaleNiceText);
 
-		// animateCardContainerOut
-		const animateCardContainerOut = new AnimationConfigBase(sceneClickHandler);
+		// animationConfigBase_2
+		const animationConfigBase_2 = new AnimationConfigBase(sceneClickHandler);
+
+		// animationConfigBase_3
+		const animationConfigBase_3 = new AnimationConfigBase(sceneClickHandler);
+
+		// animationConfigBase_4
+		const animationConfigBase_4 = new AnimationConfigBase(sceneClickHandler);
 
 		// sceneRestart
-		new SceneRestart(animateCardContainerOut);
-
-		// animatePlayAgainTextOut
-		const animatePlayAgainTextOut = new AnimationConfigBase(sceneClickHandler);
-
-		// animateNiceTextOut_1
-		const animateNiceTextOut_1 = new AnimationConfigBase(sceneClickHandler);
+		new SceneRestart(animationConfigBase_4);
 
 		// clickToPlayAgain
-		const clickToPlayAgain = this.add.image(640, 831, "clickToPlayAgain");
+		const clickToPlayAgain = this.add.image(640, 830, "clickToPlayAgain");
 
 		// animationConfigBase
 		const animationConfigBase = new AnimationConfigBase(clickToPlayAgain);
@@ -113,75 +112,70 @@ export default class Level extends Phaser.Scene {
 		// gamePlay
 		const gamePlay = new GamePlay(this);
 
-		// fullScreenButton
-		const fullScreenButton = new FullScreenButton(this, 1238, 42);
-		this.add.existing(fullScreenButton);
-
 		// lists
-		const cards = [card_7, card_6, card_5, card_4, card_3, card_2, card_1, card, card4, card3, card2, card1];
-		const gameOverScriptNodes = [scaleNiceText, animationConfigBase];
+		const cards = [card_11, card_10, card_9, card_8, card_7, card_6, card_5, card_4, card_3, card_2, card_1, card_12];
+		const gameOverScriptNodes = [animationConfigBase, scaleNiceText];
 
-		// card1 (prefab fields)
-		card1.cardFrontTextureConfig = {"key":"spritesheet","frame":"Skull.png"};
-
-		// card2 (prefab fields)
-		card2.cardFrontTextureConfig = {"key":"spritesheet","frame":"Skull.png"};
-
-		// card3 (prefab fields)
-		card3.cardFrontTextureConfig = {"key":"spritesheet","frame":"Pumpkin.png"};
-
-		// card4 (prefab fields)
-		card4.cardFrontTextureConfig = {"key":"spritesheet","frame":"Pumpkin.png"};
-
-		// card (prefab fields)
-		card.cardFrontTextureConfig = {"key":"spritesheet","frame":"Cat.png"};
+		// card_12 (prefab fields)
+		card_12.cardFrontTextureConfig = {"key":"spritesheet","frame":"Skull.png"};
 
 		// card_1 (prefab fields)
-		card_1.cardFrontTextureConfig = {"key":"spritesheet","frame":"Cat.png"};
+		card_1.cardFrontTextureConfig = {"key":"spritesheet","frame":"Skull.png"};
 
 		// card_2 (prefab fields)
-		card_2.cardFrontTextureConfig = {"key":"spritesheet","frame":"Candy.png"};
+		card_2.cardFrontTextureConfig = {"key":"spritesheet","frame":"Pumpkin.png"};
 
 		// card_3 (prefab fields)
-		card_3.cardFrontTextureConfig = {"key":"spritesheet","frame":"Candy.png"};
+		card_3.cardFrontTextureConfig = {"key":"spritesheet","frame":"Pumpkin.png"};
 
 		// card_4 (prefab fields)
-		card_4.cardFrontTextureConfig = {"key":"spritesheet","frame":"Cadle.png"};
+		card_4.cardFrontTextureConfig = {"key":"spritesheet","frame":"Cat.png"};
 
 		// card_5 (prefab fields)
-		card_5.cardFrontTextureConfig = {"key":"spritesheet","frame":"Cadle.png"};
+		card_5.cardFrontTextureConfig = {"key":"spritesheet","frame":"Cat.png"};
 
 		// card_6 (prefab fields)
-		card_6.cardFrontTextureConfig = {"key":"spritesheet","frame":"Bat.png"};
+		card_6.cardFrontTextureConfig = {"key":"spritesheet","frame":"Candy.png"};
 
 		// card_7 (prefab fields)
-		card_7.cardFrontTextureConfig = {"key":"spritesheet","frame":"Bat.png"};
+		card_7.cardFrontTextureConfig = {"key":"spritesheet","frame":"Candy.png"};
+
+		// card_8 (prefab fields)
+		card_8.cardFrontTextureConfig = {"key":"spritesheet","frame":"Cadle.png"};
+
+		// card_9 (prefab fields)
+		card_9.cardFrontTextureConfig = {"key":"spritesheet","frame":"Cadle.png"};
+
+		// card_10 (prefab fields)
+		card_10.cardFrontTextureConfig = {"key":"spritesheet","frame":"Bat.png"};
+
+		// card_11 (prefab fields)
+		card_11.cardFrontTextureConfig = {"key":"spritesheet","frame":"Bat.png"};
 
 		// scaleNiceText (prefab fields)
 		scaleNiceText.to = 1.2;
 		scaleNiceText.duration = 2000;
 		scaleNiceText.property = "scale";
 
-		// animateCardContainerOut (prefab fields)
-		animateCardContainerOut.to = 1200;
-		animateCardContainerOut.from = 360;
-		animateCardContainerOut.duration = 1000;
-		animateCardContainerOut.property = "y";
-		animateCardContainerOut.target = cardContainer;
+		// animationConfigBase_2 (prefab fields)
+		animationConfigBase_2.to = -100;
+		animationConfigBase_2.from = 360;
+		animationConfigBase_2.duration = 800;
+		animationConfigBase_2.property = "y";
+		animationConfigBase_2.target = nice;
 
-		// animatePlayAgainTextOut (prefab fields)
-		animatePlayAgainTextOut.to = 1200;
-		animatePlayAgainTextOut.from = 628;
-		animatePlayAgainTextOut.duration = 800;
-		animatePlayAgainTextOut.property = "y";
-		animatePlayAgainTextOut.target = clickToPlayAgain;
+		// animationConfigBase_3 (prefab fields)
+		animationConfigBase_3.to = 1200;
+		animationConfigBase_3.from = 628;
+		animationConfigBase_3.duration = 800;
+		animationConfigBase_3.property = "y";
+		animationConfigBase_3.target = clickToPlayAgain;
 
-		// animateNiceTextOut_1 (prefab fields)
-		animateNiceTextOut_1.to = -100;
-		animateNiceTextOut_1.from = 360;
-		animateNiceTextOut_1.duration = 800;
-		animateNiceTextOut_1.property = "y";
-		animateNiceTextOut_1.target = nice;
+		// animationConfigBase_4 (prefab fields)
+		animationConfigBase_4.to = 1200;
+		animationConfigBase_4.from = 360;
+		animationConfigBase_4.property = "y";
+		animationConfigBase_4.target = cardContainer;
 
 		// animationConfigBase (prefab fields)
 		animationConfigBase.to = 628;
@@ -200,7 +194,7 @@ export default class Level extends Phaser.Scene {
 		this.events.emit("scene-awake");
 	}
 
-	/** @type {Card[]} */
+	/** @type {CardPrefab[]} */
 	cards;
 	/** @type {AnimationConfigBase[]} */
 	gameOverScriptNodes;
@@ -210,6 +204,7 @@ export default class Level extends Phaser.Scene {
 	// Write more your code here
 
 	create() {
+
 		this.editorCreate();
 	}
 

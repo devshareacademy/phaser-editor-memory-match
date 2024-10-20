@@ -13,170 +13,169 @@
     },
     "displayList": [
         {
-            "prefabId": "58b51a3f-17df-4544-8954-deacaba4533c",
-            "id": "18d82754-a484-41a9-954c-cb4cb5bdb08a",
-            "label": "background"
+            "prefabId": "ed7b1076-57f2-467c-b61c-48a3d5c466bf",
+            "id": "00eac99f-6773-4536-aaf6-8569b7622214",
+            "label": "backgroundPrefab"
         },
         {
             "type": "Container",
-            "id": "83cbd080-e15c-4881-b212-5fbd78997c11",
+            "id": "21f4c52b-934b-430f-a7b8-2cf14ce3f634",
             "label": "cardContainer",
             "x": 640,
             "y": 360,
             "list": [
                 {
-                    "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
-                    "id": "9a733e3b-c6c1-4ce0-8941-04b1e2f1d468",
+                    "prefabId": "9f9dc0f2-41d5-4853-8375-ac0a4df61915",
+                    "id": "70dcfdeb-d4a0-4a4b-9737-6fdbcacaa23f",
                     "unlock": [
                         "x",
                         "y",
-                        "cardFrontAssetKey",
                         "cardFrontTextureConfig"
                     ],
-                    "label": "card1",
+                    "label": "card_12",
                     "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Skull.png\"}",
                     "x": 0,
                     "y": 0
                 },
                 {
-                    "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
-                    "id": "fd1ceb5f-3da3-46ad-b9ef-21eb87b0f2b0",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "cardFrontTextureConfig"
-                    ],
-                    "label": "card2",
-                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Skull.png\"}",
-                    "x": 0,
-                    "y": 0
-                },
-                {
-                    "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
-                    "id": "db4a7129-66ce-4390-b44c-659411ea19f8",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "cardFrontTextureConfig"
-                    ],
-                    "label": "card3",
-                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Pumpkin.png\"}",
-                    "x": 0,
-                    "y": 0
-                },
-                {
-                    "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
-                    "id": "9ca71997-a4f4-4cbe-bcbc-c82f059df2cc",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "cardFrontTextureConfig"
-                    ],
-                    "label": "card4",
-                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Pumpkin.png\"}",
-                    "x": 0,
-                    "y": 0
-                },
-                {
-                    "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
-                    "id": "0b4b54f0-8ea5-4cda-80c3-d28791a90b51",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "cardFrontTextureConfig"
-                    ],
-                    "label": "card",
-                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Cat.png\"}",
-                    "x": 0,
-                    "y": 0
-                },
-                {
-                    "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
-                    "id": "4cb9bbf5-dba2-405d-a0fc-a280ac293eb6",
+                    "prefabId": "9f9dc0f2-41d5-4853-8375-ac0a4df61915",
+                    "id": "b22591a2-baaa-4622-bc55-449bbfc4c3fc",
                     "unlock": [
                         "x",
                         "y",
                         "cardFrontTextureConfig"
                     ],
                     "label": "card_1",
-                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Cat.png\"}",
+                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Skull.png\"}",
                     "x": 0,
                     "y": 0
                 },
                 {
-                    "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
-                    "id": "3d94a1a8-ec84-4d5c-8791-eb1220ff9d2f",
+                    "prefabId": "9f9dc0f2-41d5-4853-8375-ac0a4df61915",
+                    "id": "7d32dacf-ca1d-4275-a704-776562e23894",
                     "unlock": [
                         "x",
                         "y",
                         "cardFrontTextureConfig"
                     ],
                     "label": "card_2",
-                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Candy.png\"}",
+                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Pumpkin.png\"}",
                     "x": 0,
                     "y": 0
                 },
                 {
-                    "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
-                    "id": "4d6b8634-d654-4ca3-9a72-51339567d195",
+                    "prefabId": "9f9dc0f2-41d5-4853-8375-ac0a4df61915",
+                    "id": "1f9c2931-8518-40b4-8bdf-2fa114e58e93",
                     "unlock": [
                         "x",
                         "y",
                         "cardFrontTextureConfig"
                     ],
                     "label": "card_3",
-                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Candy.png\"}",
+                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Pumpkin.png\"}",
                     "x": 0,
                     "y": 0
                 },
                 {
-                    "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
-                    "id": "60a1e4bd-1c44-4a29-b2f2-a290c4f84873",
+                    "prefabId": "9f9dc0f2-41d5-4853-8375-ac0a4df61915",
+                    "id": "fbb22d88-43b8-4e53-9aaa-6dac244b44a8",
                     "unlock": [
                         "x",
                         "y",
                         "cardFrontTextureConfig"
                     ],
                     "label": "card_4",
-                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Cadle.png\"}",
+                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Cat.png\"}",
                     "x": 0,
                     "y": 0
                 },
                 {
-                    "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
-                    "id": "c1386c03-689b-4177-9d2a-5149f05397e0",
+                    "prefabId": "9f9dc0f2-41d5-4853-8375-ac0a4df61915",
+                    "id": "defdbd11-a6ce-47bb-9f89-4d49139b4786",
                     "unlock": [
                         "x",
                         "y",
                         "cardFrontTextureConfig"
                     ],
                     "label": "card_5",
-                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Cadle.png\"}",
+                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Cat.png\"}",
                     "x": 0,
                     "y": 0
                 },
                 {
-                    "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
-                    "id": "694a759c-8f9b-4e05-8797-0d939f4d00f4",
+                    "prefabId": "9f9dc0f2-41d5-4853-8375-ac0a4df61915",
+                    "id": "fa07f5ba-1e22-4a10-a209-5ceb4f2253ad",
                     "unlock": [
                         "x",
                         "y",
                         "cardFrontTextureConfig"
                     ],
                     "label": "card_6",
-                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Bat.png\"}",
+                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Candy.png\"}",
                     "x": 0,
                     "y": 0
                 },
                 {
-                    "prefabId": "144e8ff0-4568-48a7-9526-a079d1aa10fd",
-                    "id": "2364eef0-0a71-4a2f-9083-c833a7ff5c7e",
+                    "prefabId": "9f9dc0f2-41d5-4853-8375-ac0a4df61915",
+                    "id": "6ac4b304-da58-4ea4-9c91-b1cc8210a6e2",
                     "unlock": [
                         "x",
                         "y",
                         "cardFrontTextureConfig"
                     ],
                     "label": "card_7",
+                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Candy.png\"}",
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "prefabId": "9f9dc0f2-41d5-4853-8375-ac0a4df61915",
+                    "id": "1e855286-d464-4955-965b-af6a3d5a6b6d",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "cardFrontTextureConfig"
+                    ],
+                    "label": "card_8",
+                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Cadle.png\"}",
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "prefabId": "9f9dc0f2-41d5-4853-8375-ac0a4df61915",
+                    "id": "bc4a5ada-05f3-4786-bac3-29ba14c5a362",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "cardFrontTextureConfig"
+                    ],
+                    "label": "card_9",
+                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Cadle.png\"}",
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "prefabId": "9f9dc0f2-41d5-4853-8375-ac0a4df61915",
+                    "id": "d94337f1-230a-413b-8bf1-2b236e3c8079",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "cardFrontTextureConfig"
+                    ],
+                    "label": "card_10",
+                    "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Bat.png\"}",
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "prefabId": "9f9dc0f2-41d5-4853-8375-ac0a4df61915",
+                    "id": "c8f9cfa2-d251-4d8f-9ecf-b8b461a90194",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "cardFrontTextureConfig"
+                    ],
+                    "label": "card_11",
                     "cardFrontTextureConfig": "{\"key\":\"spritesheet\",\"frame\":\"Bat.png\"}",
                     "x": 0,
                     "y": 0
@@ -185,7 +184,7 @@
         },
         {
             "type": "Image",
-            "id": "29314e33-cfca-4bd5-894e-a1fe56268c32",
+            "id": "89a46c81-814a-4663-b2e8-d6f01d5f66a8",
             "label": "nice",
             "texture": {
                 "key": "nice"
@@ -197,7 +196,7 @@
             "list": [
                 {
                     "prefabId": "45946cf1-e167-4a9f-ada0-2fe5b749f28c",
-                    "id": "ae17cacd-775d-40a1-b916-f73466d39b67",
+                    "id": "2fe19d62-fda2-4de4-87a4-32203152e629",
                     "unlock": [
                         "to",
                         "duration",
@@ -211,45 +210,38 @@
                     "list": [
                         {
                             "prefabId": "3d0f9437-ede2-4a64-86fb-d4956574496b",
-                            "id": "a1328c83-fde2-4b08-a3ec-5d7f246619cc",
+                            "id": "1fc4b5e3-432a-459e-9a32-7c0ffb43c33b",
                             "label": "sceneClickHandler",
                             "list": [
                                 {
                                     "prefabId": "45946cf1-e167-4a9f-ada0-2fe5b749f28c",
-                                    "id": "a226b279-58a2-4863-8f53-5ee4983d3e85",
+                                    "id": "836d934a-0b3e-437c-a15b-f8a5169cdf7f",
                                     "unlock": [
                                         "to",
                                         "from",
-                                        "property",
                                         "duration",
+                                        "property",
                                         "target"
                                     ],
-                                    "label": "animateCardContainerOut",
-                                    "displayName": "Animate card container game object out of scene",
-                                    "to": 1200,
+                                    "label": "animationConfigBase_2",
+                                    "displayName": "Animate nice text out of scene",
+                                    "to": -100,
                                     "from": 360,
-                                    "duration": 1000,
+                                    "duration": 800,
                                     "property": "y",
-                                    "target": "cardContainer",
-                                    "list": [
-                                        {
-                                            "prefabId": "a64a709f-04f5-4972-a235-fca2a79f1c39",
-                                            "id": "a5ce2fdf-afa3-44a4-991e-76ff4b532661",
-                                            "label": "sceneRestart"
-                                        }
-                                    ]
+                                    "target": "nice"
                                 },
                                 {
                                     "prefabId": "45946cf1-e167-4a9f-ada0-2fe5b749f28c",
-                                    "id": "f7cf2d6f-c9b7-4663-b4a8-2b3f5ef24882",
+                                    "id": "e520ee67-980b-4cf1-95bd-ca96ee150b09",
                                     "unlock": [
+                                        "target",
+                                        "from",
                                         "to",
                                         "duration",
-                                        "from",
-                                        "property",
-                                        "target"
+                                        "property"
                                     ],
-                                    "label": "animatePlayAgainTextOut",
+                                    "label": "animationConfigBase_3",
                                     "displayName": "Animate play again text out of scene",
                                     "to": 1200,
                                     "from": 628,
@@ -259,21 +251,26 @@
                                 },
                                 {
                                     "prefabId": "45946cf1-e167-4a9f-ada0-2fe5b749f28c",
-                                    "id": "a6a93a62-b3ae-47a5-9b4d-6729cf9d3620",
+                                    "id": "a29b21af-fa8b-4628-819d-e8f2c02ac961",
                                     "unlock": [
+                                        "target",
                                         "to",
-                                        "duration",
                                         "from",
-                                        "property",
-                                        "target"
+                                        "property"
                                     ],
-                                    "label": "animateNiceTextOut_1",
-                                    "displayName": "Animate nice text out of scene",
-                                    "to": -100,
+                                    "label": "animationConfigBase_4",
+                                    "displayName": "animateCardContainerOut",
+                                    "to": 1200,
                                     "from": 360,
-                                    "duration": 800,
                                     "property": "y",
-                                    "target": "nice"
+                                    "target": "cardContainer",
+                                    "list": [
+                                        {
+                                            "prefabId": "a64a709f-04f5-4972-a235-fca2a79f1c39",
+                                            "id": "9bca1676-a5a8-43f3-8d84-9e2155d6c537",
+                                            "label": "sceneRestart"
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -283,17 +280,17 @@
         },
         {
             "type": "Image",
-            "id": "04f3c170-2347-400d-8156-1fba8a864536",
+            "id": "5acb4c1f-dc7c-4ff1-a3c1-e9ef401c3ad4",
             "label": "clickToPlayAgain",
             "texture": {
                 "key": "clickToPlayAgain"
             },
             "x": 640,
-            "y": 831,
+            "y": 830,
             "list": [
                 {
                     "prefabId": "45946cf1-e167-4a9f-ada0-2fe5b749f28c",
-                    "id": "7c87f8b8-a56f-48c2-bb48-a17452105697",
+                    "id": "2e3def1e-a38f-40c1-b40b-b0b4d54f73da",
                     "unlock": [
                         "to",
                         "from",
@@ -309,11 +306,10 @@
             ]
         },
         {
-            "prefabId": "7b9885a6-7e0f-4203-ac7b-e6aa86c7882d",
-            "id": "a957d75a-aed6-4e66-b531-a4430bb9c8b7",
+            "prefabId": "69b80298-092e-4106-a544-0d058acb7b4b",
+            "id": "64549259-97c5-43a3-bf1b-436e8320cfb8",
             "unlock": [
                 "cards",
-                "property",
                 "cardContainer",
                 "gameOverScriptNodes"
             ],
@@ -321,17 +317,6 @@
             "cards": "cards",
             "cardContainer": "cardContainer",
             "gameOverScriptNodes": "gameOverScriptNodes"
-        },
-        {
-            "prefabId": "2dc0af1b-bed4-4583-88df-8fd91f7139a1",
-            "id": "edfd3525-ac7f-4ceb-b05f-55d858f004ac",
-            "unlock": [
-                "x",
-                "y"
-            ],
-            "label": "fullScreenButton",
-            "x": 1238,
-            "y": 42
         }
     ],
     "plainObjects": [],
@@ -343,29 +328,29 @@
     },
     "lists": [
         {
-            "id": "33e8bebe-ba30-4659-b390-be22f0c77fcd",
+            "id": "6f5afe74-6dad-4751-8642-c12d7861e6e4",
             "label": "cards",
             "objectIds": [
-                "2364eef0-0a71-4a2f-9083-c833a7ff5c7e",
-                "694a759c-8f9b-4e05-8797-0d939f4d00f4",
-                "c1386c03-689b-4177-9d2a-5149f05397e0",
-                "60a1e4bd-1c44-4a29-b2f2-a290c4f84873",
-                "4d6b8634-d654-4ca3-9a72-51339567d195",
-                "3d94a1a8-ec84-4d5c-8791-eb1220ff9d2f",
-                "4cb9bbf5-dba2-405d-a0fc-a280ac293eb6",
-                "0b4b54f0-8ea5-4cda-80c3-d28791a90b51",
-                "9ca71997-a4f4-4cbe-bcbc-c82f059df2cc",
-                "db4a7129-66ce-4390-b44c-659411ea19f8",
-                "fd1ceb5f-3da3-46ad-b9ef-21eb87b0f2b0",
-                "9a733e3b-c6c1-4ce0-8941-04b1e2f1d468"
+                "c8f9cfa2-d251-4d8f-9ecf-b8b461a90194",
+                "d94337f1-230a-413b-8bf1-2b236e3c8079",
+                "bc4a5ada-05f3-4786-bac3-29ba14c5a362",
+                "1e855286-d464-4955-965b-af6a3d5a6b6d",
+                "6ac4b304-da58-4ea4-9c91-b1cc8210a6e2",
+                "fa07f5ba-1e22-4a10-a209-5ceb4f2253ad",
+                "defdbd11-a6ce-47bb-9f89-4d49139b4786",
+                "fbb22d88-43b8-4e53-9aaa-6dac244b44a8",
+                "1f9c2931-8518-40b4-8bdf-2fa114e58e93",
+                "7d32dacf-ca1d-4275-a704-776562e23894",
+                "b22591a2-baaa-4622-bc55-449bbfc4c3fc",
+                "70dcfdeb-d4a0-4a4b-9737-6fdbcacaa23f"
             ]
         },
         {
-            "id": "354a1a18-a0ac-400a-9ce6-7d4bee0d1150",
+            "id": "a98cb407-ca52-439d-a101-7b882de0acee",
             "label": "gameOverScriptNodes",
             "objectIds": [
-                "ae17cacd-775d-40a1-b916-f73466d39b67",
-                "7c87f8b8-a56f-48c2-bb48-a17452105697"
+                "2e3def1e-a38f-40c1-b40b-b0b4d54f73da",
+                "2fe19d62-fda2-4de4-87a4-32203152e629"
             ]
         }
     ]
