@@ -14,6 +14,14 @@ You can find a playable version of the game here: <a href="https://scottwestover
 
 ![Gameplay](/docs/example.gif?raw=true 'Gameplay')
 
+## Credits
+
+This project would not have been possible without the following artists and the assets that they created:
+
+* https://jonathanvolpi.itch.io/memory-game-template-halloween
+* https://nonemo.itch.io/dark-halloween
+* https://oscarleites.itch.io/free-halloween-music-pack
+
 ## Configuration
 
 * It is coded in JavaScript.
