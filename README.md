@@ -4,7 +4,7 @@ A halloween memory match game that was built using the Phaser Editor v4 project 
 
 To learn how this project was built, you can follow along in a tutorial video on YouTube here:
 
-Coming soon...
+[<img src="https://i.ytimg.com/vi/gf_3KNMRp9k/hqdefault.jpg">](https://youtu.be/gf_3KNMRp9k "Phaser Editor v4 Tutorial: Build a Spooky Halloween Memory Match Game!")
 
 ## Demo
 
